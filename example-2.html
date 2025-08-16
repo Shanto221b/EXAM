@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example 2</title>
+</head>
+<body>
+
+<br><br><br><br>
+Username: <input type="text" id="Username"> <br>
+
+<script>
+
+
+    // Step 1: get the input element
+    let x = document.getElementById("Username");
+
+
+
+    // Step 2: function to adjust case
+
+
+    function AdjustCase() 
+
+    {
+
+
+
+        
+   
+        if (x.value.length < 4) 
+        {
+            x.value = x.value.toUpperCase(); // less than 4 → lowercase
+        }
+
+        
+        
+        else
+        {
+            x.value = x.value.toLowerCase(); // 4 or more → uppercase
+        }
+    
+  
+
+
+    
+    
+    
+    
+    }
+
+
+
+
+
+    // Step 3: attach the event listener
+
+    x.addEventListener("input", AdjustCase);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

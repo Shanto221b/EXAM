@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Example 3</title>
+</head>
+
+
+
+<body>
+
+
+    <br><br><br><br>
+
+    User Age : <input type="text" id="Age"> <br><br>
+
+    <p id="message"> hello </p> 
+
+
+
+
+
+    <script>
+
+        // Step 1: get elements (element itself, not value)
+
+        let Age = document.getElementById("Age");
+        let Message = document.getElementById("message");
+
+
+
+        // Step 2: function to check age
+
+
+        function AgeCheck() {
+
+
+            if (Age.value < 40) {
+                Message.innerHTML = "To be a part of the community, you need to at least 40";
+                Message.style.color = "red";
+
+
+            }
+
+
+
+            else if (     isNaN(Age.value)          ) 
+            
+            {
+
+                alert("use number");
+                
+
+            }
+
+
+
+
+
+
+            else if (Age.value >= 40 && Age.value <= 50) {
+
+                Message.innerHTML = "You are the youngsters of this community";
+                Message.style.color = "red";
+            }
+
+
+
+            else if (Age.value > 50 && Age.value <= 90) {
+
+                Message.innerHTML = "Buro Vam";
+                Message.style.color = "red";
+            }
+
+
+
+
+
+
+
+            else {
+                Message.innerHTML = "Ghater Morar admission nai";
+            }
+
+
+
+        }
+
+        // Step 3: attach event listener (outside the function)
+
+
+        Age.addEventListener("input", AgeCheck);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

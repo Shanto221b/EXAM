@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>example 1</title>
+
+
+</head>
+
+
+
+
+<body>
+    
+<h1> Form </h1>
+
+
+
+<form onsubmit="return Shanto()" action="abc.html">
+
+
+<label> First name :   <input type="text" id="Fname">             <br>  </label>
+<label> last name  :   <input type="text" id="Lname">                  </label> <br><br>
+
+<input type="submit" value="Click it">
+
+
+</form>
+
+
+
+
+
+
+<script>
+
+
+
+function Shanto () {
+
+
+
+
+var FirstnameVariable = document.getElementById("Fname").value;
+var LastnameVariable = document.getElementById("Lname").value;
+
+
+if (FirstnameVariable == "" || LastnameVariable == "") 
+{
+    alert("Fields cannot be empty!");
+
+    return false; // stops form submission  
+
+}
+
+else if ( FirstnameVariable.length<2 || LastnameVariable.length<2  )
+
+{
+ 
+    alert("Dui er kom howa jabe na");
+    return false;
+
+}
+
+
+
+
+
+else 
+
+{
+    return true; // allows form submission
+}
+ 
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

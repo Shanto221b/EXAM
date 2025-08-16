@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Example 4</title>
+</head>
+
+
+<body>
+
+    <h1>Random Background Color</h1>
+
+
+    <br><br>
+
+    <input type="submit" value="Click it" id="Button"> <br>
+
+    <br> <br>
+
+    First click → Background becomes light blue <br>
+    Second click → Background becomes pale yellow <br>
+    Third click → Background becomes lavender <br>
+
+
+
+    <script>
+
+        let Button = document.getElementById("Button");
+        let clickcounter = 0;
+
+
+        //step 2
+
+        function changeBackground() {
+
+
+            clickcounter++;
+
+
+            if (clickcounter == 1) {
+
+                document.body.style.backgroundColor = 'LightBlue';
+
+            }
+
+            else if (clickcounter == 2) {
+
+                document.body.style.backgroundColor = 'Yellow';
+
+            }
+
+            else if (clickcounter == 3) {
+
+                document.body.style.backgroundColor = 'lavender';
+
+            }
+
+            else {
+                clickcounter= 0;
+                alert("Over Clicked");
+                
+            }
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+        //step 3
+
+
+        Button.addEventListener("click", changeBackground);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
